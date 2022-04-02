@@ -83,6 +83,7 @@ int main(int argc, char **argv){
   return 0;
 }
 ```
+## Solution
 
 Reading the program, it places a canary onto the stack, based on what's in the file, after asking how long your message is. The length of the message doesn't matter, since the length can be more than the buffer size.
 

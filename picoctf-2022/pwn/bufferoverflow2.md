@@ -49,6 +49,7 @@ int main(int argc, char **argv){
   return 0;
 }
 ```
+## Solution
 
 After running a quick `checksec` on the program, we get this:
 
